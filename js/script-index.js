@@ -2,6 +2,16 @@ $(document).ready( function(){
 	//Eliminando icono black
 	$("#back").remove();
 
+});
+
+	//Agregando texto NUEVAS RECETAS
+	$("#recetas").append(function printNews() {
+		$("#recetas").text("NUEVAS RECETAS")
+	});
+
+
+
+
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
@@ -43,5 +53,3 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 
 }
-
-});
