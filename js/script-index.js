@@ -1,13 +1,15 @@
 $(document).ready( function(){
+	//Eliminando icono black
+	$("#back").remove();
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
-});
+
 
 
 /*
-* Función que se encarga de pintar TODAS las recetas que tengan 
+* Función que se encarga de pintar TODAS las recetas que tengan
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
@@ -15,9 +17,9 @@ function renderHighlightedRecipes(recipesArray) {
 }
 
 /*
-* Función que se encarga de pintar UNA recetas que tenga 
+* Función que se encarga de pintar UNA recetas que tenga
 * marcado el atributo "highlighted" como TRUE
-* Aqui se tiene que crear el HTML que esta en el 
+* Aqui se tiene que crear el HTML que esta en el
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
@@ -35,11 +37,11 @@ function renderActivities(activitiesArray) {
 
 /*
 * Función que se encarga de pintar una actividad
-* Aqui se tiene que crear el HTML que esta en el 
+* Aqui se tiene que crear el HTML que esta en el
 * archivo "templates/templates-activity.html"
 */
 function renderActivity(recipe) {
-	
+
 }
 
-
+});
